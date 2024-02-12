@@ -1,0 +1,115 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:1:1-49:12
+INJECTED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:1:1-49:12
+INJECTED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:1:1-49:12
+	package
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:2:5-36
+		INJECTED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.CAMERA
+ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:4:5-65
+	android:name
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:4:22-62
+uses-permission#android.permission.FLASHLIGHT
+ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:5:5-69
+	android:name
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:5:22-66
+uses-permission#android.permission.NFC
+ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:6:5-62
+	android:name
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:6:22-59
+uses-permission#android.permission.INTERNET
+ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:7:22-64
+application
+ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:9:5-48:19
+activity#com.scsoft.kycsdklibrary.sdkActivity.KycSdkHeadPoseActivity
+ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:10:9-14:40
+	android:screenOrientation
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:12:13-49
+	android:exported
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:14:13-37
+	android:theme
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:13:13-63
+	android:name
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:11:13-87
+activity#com.scsoft.kycsdklibrary.sdkActivity.KycSdkIDCardFrontActivity
+ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:15:9-19:40
+	android:screenOrientation
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:17:13-49
+	android:exported
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:19:13-37
+	android:theme
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:18:13-63
+	android:name
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:16:13-90
+activity#com.scsoft.kycsdklibrary.sdkActivity.KycSdkIDCardBackActivity
+ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:20:9-24:40
+	android:screenOrientation
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:22:13-49
+	android:exported
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:24:13-37
+	android:theme
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:23:13-63
+	android:name
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:21:13-89
+activity#com.scsoft.kycsdklibrary.sdkActivity.KycSdkSelfieActivity
+ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:25:9-29:40
+	android:screenOrientation
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:27:13-49
+	android:exported
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:29:13-37
+	android:theme
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:28:13-63
+	android:name
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:26:13-85
+activity#com.scsoft.kycsdklibrary.sdkActivity.KycSdkNfcActivity
+ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:30:9-42:20
+	android:screenOrientation
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:32:13-49
+	android:exported
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:34:13-36
+	android:theme
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:33:13-63
+	android:name
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:31:13-82
+intent-filter#action:name:android.nfc.action.NDEF_DISCOVERED
+ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:35:13-37:29
+action#android.nfc.action.NDEF_DISCOVERED
+ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:36:17-77
+	android:name
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:36:25-74
+intent-filter#action:name:android.nfc.action.TAG_DISCOVERED+category:name:android.intent.category.DEFAULT
+ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:38:13-41:29
+action#android.nfc.action.TAG_DISCOVERED
+ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:39:17-75
+	android:name
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:39:25-73
+category#android.intent.category.DEFAULT
+ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:40:17-75
+	android:name
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:40:27-73
+meta-data#com.google.mlkit.vision.DEPENDENCIES
+ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:44:9-46:40
+	android:value
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:46:13-37
+	android:name
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:45:13-64
+uses-sdk
+INJECTED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml
+INJECTED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml
+INJECTED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml
+INJECTED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml
+		ADDED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml

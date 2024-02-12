@@ -1,6 +1,6 @@
 import { NativeModules } from 'react-native';
 
-const { RNKYCLibrary } = NativeModules;
+const { RNKycSdk } = NativeModules;
 import {IdFrontPhotoDetails} from '../models/IdFrontPhotoDetails';
 import {IdBackPhotoDetails} from '../models/id_back_photo_details';
 import {SelfiePhotoDetails} from '../models/selfie_photo_details';
@@ -35,7 +35,7 @@ class KycSdkPlugin {
   
       try {
         // Yerel modül üzerinden idFrontPhoto fonksiyonunu çağır.
-        const scanResult = await RNKYCLibrary.startIDCardFrontActivity();
+        const scanResult = await RNKycSdk.startIDCardFrontActivity();
         this._isIdFrontPhotoWaiting = false;
         if (scanResult) {
           // scanResult'ı IdFrontPhotoDetails nesnesine dönüştür
@@ -62,7 +62,7 @@ class KycSdkPlugin {
   
       try {
         // Yerel modül üzerinden idFrontPhoto fonksiyonunu çağır.
-        const scanResult = await RNKYCLibrary.showKycSdkIdBackPhotoActivity();
+        const scanResult = await RNKycSdk.showKycSdkIdBackPhotoActivity();
         this._isIdBackPhotoWaiting = false;
         if (scanResult) {
           // scanResult'ı IdFrontPhotoDetails nesnesine dönüştür
@@ -88,7 +88,7 @@ class KycSdkPlugin {
       this._isSelfiePhotoWaiting = true;
 
       try {
-        const scanResult = await RNKYCLibrary.showKycSdkSelfiePhotoActivity();
+        const scanResult = await RNKycSdk.showKycSdkSelfiePhotoActivity();
         this._isSelfiePhotoWaiting = false;
         if (scanResult) {
           return new SelfiePhotoDetails(scanResult);
@@ -114,7 +114,7 @@ class KycSdkPlugin {
 
       try {
 
-        const scanResult = await RNKYCLibrary.showKycSdkNfcActivity(nfcOptions);
+        const scanResult = await RNKycSdk.showKycSdkNfcActivity(nfcOptions);
         this._isNfcWaiting = false;
         if (scanResult) {
           return new NfcDetails(scanResult);
@@ -144,7 +144,7 @@ class KycSdkPlugin {
           direction: "left"
         };
         
-        const scanResult = await RNKYCLibrary.showKycSdkHeadPoseActivity(headPoseOptions);
+        const scanResult = await RNKycSdk.showKycSdkHeadPoseActivity(headPoseOptions);
         this._isHeadPoseWaiting = false;
         if (scanResult) {
           return new HeadPoseDetails(scanResult);

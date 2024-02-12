@@ -19,7 +19,7 @@ import {
   TouchableOpacity,
   NativeModules,
 } from 'react-native';
-import DeviceInfo from 'react-native-device-info';
+import KYCSDK from 'react-native-scsoft-kycsdk';
 import {
   HeadPoseDetails,
   SelfiePhotoDetails,
@@ -27,14 +27,14 @@ import {
   IdBackPhotoDetails,
   IdFrontPhotoDetails,
   NfcOptions,
-} from 'react-native-device-info';
+} from 'react-native-scsoft-kycsdk';
 import {
   showFrontId,
   showBackId,
   showSelfie,
   showNfc,
   showHeadPose,
-} from 'react-native-device-info';
+} from 'react-native-scsoft-kycsdk';
 
 export default class App extends Component {
   constructor(props) {
@@ -60,7 +60,7 @@ export default class App extends Component {
 
   idFrontPhoto = async () => {
     try {
-      const details = await DeviceInfo.showFrontId();
+      const details = await KYCSDK.showFrontId();
       if (details) {
         this.setState({idFrontPhotoDetails: details});
 
@@ -74,7 +74,7 @@ export default class App extends Component {
 
   idBackPhoto = async () => {
     try {
-      const details = await DeviceInfo.showBackId();
+      const details = await KYCSDK.showBackId();
       if (details) {
         this.setState({idBackPhotoDetails: details});
 
@@ -94,7 +94,7 @@ export default class App extends Component {
         dateOfExpiry: '340116',
       };
 
-      const details = await DeviceInfo.showNfc(nfcOptions);
+      const details = await KYCSDK.showNfc(nfcOptions);
       if (details) {
         this.setState({nfcDetails: details});
 

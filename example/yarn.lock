@@ -9688,9 +9688,8 @@
     "jscodeshift" "^0.11.0"
     "nullthrows" "^1.1.1"
 
-"react-native-device-info@github:react-native-device-info/react-native-device-info":
-  "integrity" "sha512-mF6qSWm04U3quH0UsZIAtN6HmPr3yV8xhBmNf11Ecwa2PpmzXJHOAzmqKejIuQwALW/oVhSfT/Ii0KJQwARWYw=="
-  "resolved" "git+ssh://git@github.com/react-native-device-info/react-native-device-info.git"
+"react-native-scsoft-kycsdk@github:IChadWickI/scsoft-react-native-library":
+  "resolved" "git+ssh://git@github.com/IChadWickI/scsoft-react-native-library.git#c6003df19a65c5ddc0fa09a576db499b200da182"
   "version" "10.12.0"
 
 "react-native-windows@0.67.3":

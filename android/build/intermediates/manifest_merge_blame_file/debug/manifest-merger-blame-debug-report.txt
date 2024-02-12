@@ -1,0 +1,102 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.learnium.RNKycSdk" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="16"
+6-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml
+7        android:targetSdkVersion="28" />
+7-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml
+8
+9    <uses-permission android:name="android.permission.CAMERA" />
+9-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:4:5-65
+9-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:4:22-62
+10    <uses-permission android:name="android.permission.FLASHLIGHT" />
+10-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:5:5-69
+10-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:5:22-66
+11    <uses-permission android:name="android.permission.NFC" />
+11-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:6:5-62
+11-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:6:22-59
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:7:5-67
+12-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:7:22-64
+13
+14    <application>
+14-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:9:5-48:19
+15        <activity
+15-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:10:9-14:40
+16            android:name="com.scsoft.kycsdklibrary.sdkActivity.KycSdkHeadPoseActivity"
+16-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:11:13-87
+17            android:exported="false"
+17-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:14:13-37
+18            android:screenOrientation="portrait"
+18-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:12:13-49
+19            android:theme="@style/Theme.AppCompat.NoActionBar" />
+19-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:13:13-63
+20        <activity
+20-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:15:9-19:40
+21            android:name="com.scsoft.kycsdklibrary.sdkActivity.KycSdkIDCardFrontActivity"
+21-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:16:13-90
+22            android:exported="false"
+22-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:19:13-37
+23            android:screenOrientation="portrait"
+23-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:17:13-49
+24            android:theme="@style/Theme.AppCompat.NoActionBar" />
+24-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:18:13-63
+25        <activity
+25-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:20:9-24:40
+26            android:name="com.scsoft.kycsdklibrary.sdkActivity.KycSdkIDCardBackActivity"
+26-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:21:13-89
+27            android:exported="false"
+27-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:24:13-37
+28            android:screenOrientation="portrait"
+28-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:22:13-49
+29            android:theme="@style/Theme.AppCompat.NoActionBar" />
+29-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:23:13-63
+30        <activity
+30-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:25:9-29:40
+31            android:name="com.scsoft.kycsdklibrary.sdkActivity.KycSdkSelfieActivity"
+31-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:26:13-85
+32            android:exported="false"
+32-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:29:13-37
+33            android:screenOrientation="portrait"
+33-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:27:13-49
+34            android:theme="@style/Theme.AppCompat.NoActionBar" />
+34-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:28:13-63
+35        <activity
+35-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:30:9-42:20
+36            android:name="com.scsoft.kycsdklibrary.sdkActivity.KycSdkNfcActivity"
+36-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:31:13-82
+37            android:exported="true"
+37-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:34:13-36
+38            android:screenOrientation="portrait"
+38-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:32:13-49
+39            android:theme="@style/Theme.AppCompat.NoActionBar" >
+39-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:33:13-63
+40            <intent-filter>
+40-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:35:13-37:29
+41                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+41-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:36:17-77
+41-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:36:25-74
+42            </intent-filter>
+43            <intent-filter>
+43-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:38:13-41:29
+44                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+44-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:39:17-75
+44-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:39:25-73
+45
+46                <category android:name="android.intent.category.DEFAULT" />
+46-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:40:17-75
+46-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:40:27-73
+47            </intent-filter>
+48        </activity>
+49
+50        <meta-data
+50-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:44:9-46:40
+51            android:name="com.google.mlkit.vision.DEPENDENCIES"
+51-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:45:13-64
+52            android:value="face,ocr" />
+52-->/Users/muratfet/Documents/GitHub/scsoft-react-native-library/android/src/main/AndroidManifest.xml:46:13-37
+53    </application>
+54
+55</manifest>

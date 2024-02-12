@@ -6,7 +6,7 @@ import {NfcDetails} from './models/nfc_details';
 import {NfcOptions} from './models/nfc_options';
 import {HeadPoseDetails} from './models/head_pose_details';
 import {HeadPoseOptions} from './models/head_pose_options';
-import { KYCLibraryModule } from './internal/privateTypes';
+import { KycSdkModule } from './internal/privateTypes';
 
 
 
@@ -64,7 +64,7 @@ export async function showHeadPose(headPoseOptions : HeadPoseOptions): Promise<H
 
 export type { HeadPoseDetails,HeadPoseOptions,IdBackPhotoDetails,IdFrontPhotoDetails,SelfiePhotoDetails,NfcDetails,NfcOptions};
 
-const KYCLibrary: KYCLibraryModule = {
+const KycSdk: KycSdkModule = {
   showFrontId,
   showBackId,
   showSelfie,
@@ -72,4 +72,4 @@ const KYCLibrary: KYCLibraryModule = {
   showHeadPose
 };
 
-export default KYCLibrary;
+export default KycSdk;

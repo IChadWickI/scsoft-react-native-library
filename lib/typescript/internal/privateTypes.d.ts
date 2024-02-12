@@ -6,7 +6,7 @@ import { NfcDetails } from '../models/nfc_details';
 import { NfcOptions } from '../models/nfc_options';
 import { HeadPoseDetails } from '../models/head_pose_details';
 import { HeadPoseOptions } from '../models/head_pose_options';
-export interface KYCLibraryModule {
+export interface KycSdkModule {
     showFrontId: () => Promise<IdFrontPhotoDetails | null>;
     showBackId: () => Promise<IdBackPhotoDetails | null>;
     showSelfie: () => Promise<SelfiePhotoDetails | null>;
