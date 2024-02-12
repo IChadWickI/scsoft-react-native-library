@@ -1,9 +1,9 @@
-enum CardHolderNameScanPosition {
+export enum CardHolderNameScanPosition {
   aboveCardNumber = "aboveCardNumber",
   belowCardNumber = "belowCardNumber",
 }
 
-type CardScanOptionsParams = {
+export type CardScanOptionsParams = {
   scanExpiryDate?: boolean;
   scanCardHolderName?: boolean;
   initialScansToDrop?: number;
@@ -17,7 +17,7 @@ type CardScanOptionsParams = {
   possibleCardHolderNamePositions?: CardHolderNameScanPosition[];
 };
 
-class CardScanOptions {
+export class CardScanOptions {
   scanExpiryDate: boolean;
   scanCardHolderName: boolean;
   initialScansToDrop: number;

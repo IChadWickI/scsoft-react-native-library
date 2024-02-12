@@ -1,5 +1,5 @@
 // IdPhotoOptions için TypeScript interface tanımı
-interface IdPhotoOptionsMap {
+export interface IdPhotoOptionsMap {
     activeColorHex?: string;
     passiveColorHex?: string;
   
@@ -20,7 +20,7 @@ interface IdPhotoOptionsMap {
   }
   
   // IdPhotoOptions sınıfı tanımı
-  class IdPhotoOptions {
+  export class IdPhotoOptions {
     activeColorHex: string = "";
     passiveColorHex: string = "";
   

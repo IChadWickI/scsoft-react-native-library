@@ -1,12 +1,14 @@
 import { NativeModules } from 'react-native';
 
-const { RNDeviceInfo } = NativeModules;
+const { RNKYCLibrary } = NativeModules;
 import {IdFrontPhotoDetails} from '../models/IdFrontPhotoDetails';
 import {IdBackPhotoDetails} from '../models/id_back_photo_details';
 import {SelfiePhotoDetails} from '../models/selfie_photo_details';
 import {NfcDetails} from '../models/nfc_details';
-import {HeadPoseDetails} from '../models/head_pose_details';
 import {NfcOptions} from '../models/nfc_options';
+import {HeadPoseDetails} from '../models/head_pose_details';
+import {HeadPoseOptions} from '../models/head_pose_options';
+
 
 class KycSdkPlugin {
     static _idFrontPhoto = 'id_front_photo';
@@ -33,7 +35,7 @@ class KycSdkPlugin {
   
       try {
         // Yerel modül üzerinden idFrontPhoto fonksiyonunu çağır.
-        const scanResult = await RNDeviceInfo.startIDCardFrontActivity();
+        const scanResult = await RNKYCLibrary.startIDCardFrontActivity();
         this._isIdFrontPhotoWaiting = false;
         if (scanResult) {
           // scanResult'ı IdFrontPhotoDetails nesnesine dönüştür
@@ -60,7 +62,7 @@ class KycSdkPlugin {
   
       try {
         // Yerel modül üzerinden idFrontPhoto fonksiyonunu çağır.
-        const scanResult = await RNDeviceInfo.showKycSdkIdBackPhotoActivity();
+        const scanResult = await RNKYCLibrary.showKycSdkIdBackPhotoActivity();
         this._isIdBackPhotoWaiting = false;
         if (scanResult) {
           // scanResult'ı IdFrontPhotoDetails nesnesine dönüştür
@@ -86,7 +88,7 @@ class KycSdkPlugin {
       this._isSelfiePhotoWaiting = true;
 
       try {
-        const scanResult = await RNDeviceInfo.showKycSdkSelfiePhotoActivity();
+        const scanResult = await RNKYCLibrary.showKycSdkSelfiePhotoActivity();
         this._isSelfiePhotoWaiting = false;
         if (scanResult) {
           return new SelfiePhotoDetails(scanResult);
@@ -112,7 +114,7 @@ class KycSdkPlugin {
 
       try {
 
-        const scanResult = await RNDeviceInfo.showKycSdkNfcActivity(nfcOptions);
+        const scanResult = await RNKYCLibrary.showKycSdkNfcActivity(nfcOptions);
         this._isNfcWaiting = false;
         if (scanResult) {
           return new NfcDetails(scanResult);
@@ -125,7 +127,7 @@ class KycSdkPlugin {
       return null;
     }
 
-    static async headPose(): Promise<HeadPoseDetails | null> {
+    static async headPose(headPoseOptions : HeadPoseOptions): Promise<HeadPoseDetails | null> {
       if (this._isIdFrontPhotoWaiting ||
         this._isIdBackPhotoWaiting ||
         this._isSelfiePhotoWaiting ||
@@ -142,7 +144,7 @@ class KycSdkPlugin {
           direction: "left"
         };
         
-        const scanResult = await RNDeviceInfo.showKycSdkHeadPoseActivity(headPoseOptions);
+        const scanResult = await RNKYCLibrary.showKycSdkHeadPoseActivity(headPoseOptions);
         this._isHeadPoseWaiting = false;
         if (scanResult) {
           return new HeadPoseDetails(scanResult);

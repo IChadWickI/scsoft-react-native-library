@@ -1,10 +1,10 @@
 // HeadPoseOptions için TypeScript interface tanımı
-interface HeadPoseOptionsMap {
+export interface HeadPoseOptionsMap {
     direction?: string;
   }
   
   // HeadPoseOptions sınıfı tanımı
-  class HeadPoseOptions {
+  export class HeadPoseOptions {
     direction: string;
   
     constructor(options: HeadPoseOptionsMap = { direction: 'left' }) {

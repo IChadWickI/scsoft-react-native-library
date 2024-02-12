@@ -34,7 +34,7 @@ public class RNInstallReferrerClient {
   private static final int R_RESPONSE_FEATURE_NOT_SUPPORTED = 2;
 
   RNInstallReferrerClient(Context context) {
-    sharedPreferences = context.getSharedPreferences("react-native-device-info", Context.MODE_PRIVATE);
+    sharedPreferences = context.getSharedPreferences("react-native-scsfot-kyclibrary", Context.MODE_PRIVATE);
 
     if (InstallReferrerClientClazz == null || InstallReferrerStateListenerClazz == null || ReferrerDetailsClazz == null) {
       return;

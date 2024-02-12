@@ -3,15 +3,16 @@ import {IdFrontPhotoDetails} from '../models/IdFrontPhotoDetails';
 import {IdBackPhotoDetails} from '../models/id_back_photo_details';
 import {SelfiePhotoDetails} from '../models/selfie_photo_details';
 import {NfcDetails} from '../models/nfc_details';
-import {HeadPoseDetails} from '../models/head_pose_details';
 import {NfcOptions} from '../models/nfc_options';
+import {HeadPoseDetails} from '../models/head_pose_details';
+import {HeadPoseOptions} from '../models/head_pose_options';
 
-export interface DeviceInfoModule {
+export interface KYCLibraryModule {
   showFrontId: () => Promise<IdFrontPhotoDetails | null>
   showBackId: () => Promise<IdBackPhotoDetails | null>
   showSelfie: () => Promise<SelfiePhotoDetails | null>
   showNfc: (nfcOptions: NfcOptions) => Promise<NfcDetails | null>
-  showHeadPose: () => Promise<HeadPoseDetails | null>
+  showHeadPose: (headPoseOptions : HeadPoseOptions) => Promise<HeadPoseDetails | null>
 }
 
 export type Getter<T> = () => T;

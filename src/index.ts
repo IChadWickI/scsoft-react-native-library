@@ -3,9 +3,10 @@ import {IdFrontPhotoDetails} from './models/IdFrontPhotoDetails';
 import {IdBackPhotoDetails} from './models/id_back_photo_details';
 import {SelfiePhotoDetails} from './models/selfie_photo_details';
 import {NfcDetails} from './models/nfc_details';
-import {HeadPoseDetails} from './models/head_pose_details';
 import {NfcOptions} from './models/nfc_options';
-import { DeviceInfoModule } from './internal/privateTypes';
+import {HeadPoseDetails} from './models/head_pose_details';
+import {HeadPoseOptions} from './models/head_pose_options';
+import { KYCLibraryModule } from './internal/privateTypes';
 
 
 
@@ -49,9 +50,9 @@ export async function showNfc(nfcOptions : NfcOptions): Promise<NfcDetails | nul
   }
 }
 
-export async function showHeadPose(): Promise<HeadPoseDetails | null> {
+export async function showHeadPose(headPoseOptions : HeadPoseOptions): Promise<HeadPoseDetails | null> {
   try {
-    const result = await KycSdkPlugin.headPose();
+    const result = await KycSdkPlugin.headPose(headPoseOptions);
     return result;
   } catch (error) {
     console.error('Error in showSelfie:', error);
@@ -61,9 +62,9 @@ export async function showHeadPose(): Promise<HeadPoseDetails | null> {
 
 
 
-export type { HeadPoseDetails,IdBackPhotoDetails,IdFrontPhotoDetails,SelfiePhotoDetails,NfcDetails,NfcOptions};
+export type { HeadPoseDetails,HeadPoseOptions,IdBackPhotoDetails,IdFrontPhotoDetails,SelfiePhotoDetails,NfcDetails,NfcOptions};
 
-const DeviceInfo: DeviceInfoModule = {
+const KYCLibrary: KYCLibraryModule = {
   showFrontId,
   showBackId,
   showSelfie,
@@ -71,4 +72,4 @@ const DeviceInfo: DeviceInfoModule = {
   showHeadPose
 };
 
-export default DeviceInfo;
+export default KYCLibrary;

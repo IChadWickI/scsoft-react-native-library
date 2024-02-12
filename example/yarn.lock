@@ -7035,7 +7035,7 @@
   "version" "0.0.1"
 
 "isarray@1.0.0":
-  "integrity" "sha512-VLghIWNM6ELQzo7zwmcg0NmTVyWKYjvIeM83yjp0wRDTmUnrM678fQbcKBo6n2CJEF0szoG//ytg+TKla89ALQ=="
+  "integrity" "sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE= sha512-VLghIWNM6ELQzo7zwmcg0NmTVyWKYjvIeM83yjp0wRDTmUnrM678fQbcKBo6n2CJEF0szoG//ytg+TKla89ALQ=="
   "resolved" "https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz"
   "version" "1.0.0"
 
@@ -9689,7 +9689,8 @@
     "nullthrows" "^1.1.1"
 
 "react-native-device-info@github:react-native-device-info/react-native-device-info":
-  "resolved" "git+ssh://git@github.com/react-native-device-info/react-native-device-info.git#116291a7362fe262a58230f5760eb2853e34e541"
+  "integrity" "sha512-mF6qSWm04U3quH0UsZIAtN6HmPr3yV8xhBmNf11Ecwa2PpmzXJHOAzmqKejIuQwALW/oVhSfT/Ii0KJQwARWYw=="
+  "resolved" "git+ssh://git@github.com/react-native-device-info/react-native-device-info.git"
   "version" "10.12.0"
 
 "react-native-windows@0.67.3":

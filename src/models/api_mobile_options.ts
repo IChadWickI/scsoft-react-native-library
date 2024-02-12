@@ -5,7 +5,7 @@ import { MrzDetails,MrzDetailsMap } from "./mrz_details";
 import { NfcDetails,NfcDetailsMap } from "./nfc_details";
 
 // ApiMobileOptions için TypeScript interface tanımı
-interface ApiMobileOptionsMap {
+export interface ApiMobileOptionsMap {
     base64_autoCropped_idFrontImage?: string;
     base64_autoCropped_idBackImage?: string;
     mrzDetails?: MrzDetailsMap;
@@ -14,7 +14,7 @@ interface ApiMobileOptionsMap {
   }
   
   // ApiMobileOptions sınıfı tanımı
-  class ApiMobileOptions {
+  export class ApiMobileOptions {
     base64_autoCropped_idFrontImage: string = "";
     base64_autoCropped_idBackImage: string = "";
   
